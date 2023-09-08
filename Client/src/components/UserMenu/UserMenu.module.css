@@ -1,0 +1,134 @@
+@import '../../stylesheet/var.css';
+
+.darkMode {
+  margin-right: 2rem;
+}
+.imageContainer {
+  width: auto;
+  height: 2.5rem;
+  border-radius: 10%;
+  object-fit: cover;
+}
+.imageContainer:hover,
+.imageContainer:focus {
+  background-color: var(--accent-btn-color);
+  stroke: var(--accent-btn-color);
+}
+.header__user {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__text {
+  font-family: var(--main__font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--font-size__accent);
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 10px;
+  color: var(--secondary-text-color);
+}
+
+.line {
+  color: var(--secondary-text-color);
+  margin-right: 0px;
+}
+@media screen and (min-width: 768px) {
+  .line {
+    margin-right: 15px;
+  }
+}
+
+.logout {
+  background-color: var(--btn-color);
+  border: none;
+  outline: none;
+  color: var(--secondary-text-color);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.logout:hover,
+.logout:focus {
+  color: var(--accent-btn-color);
+  stroke: var(--accent-btn-color);
+}
+
+.logoutDark {
+  background-color: var(--main-bcg-color);
+  border: none;
+  outline: none;
+  color: var(--secondary-text-color);
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logoutDark:hover,
+.logoutDark:focus {
+  color: var(--accent-btn-color);
+  stroke: var(--accent-btn-color);
+}
+@media screen and (min-width: 768px) {
+  .exit {
+    margin-left: 10px;
+    font-family: var(--main__font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--font-size__btn);
+    line-height: 27px;
+    text-align: right;
+  }
+  .imageContainer {
+    width: auto;
+    height: 4rem;
+    border-radius: 25%;
+    object-fit: cover;
+  }
+}
+
+.darkmode {
+  display: flex;
+  justify-content: center;
+}
+
+.darkmode .dark {
+  background-color: var(--secondary-text-color);
+}
+.darkmode .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.darkmode .label {
+  width: 40px;
+  height: 20px;
+  background-color: var(--accent-bcg-color);
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.darkmode .ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  /* top: 2px; */
+  left: 0;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.darkmode .checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}

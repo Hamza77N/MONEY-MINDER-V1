@@ -1,0 +1,59 @@
+/** @format */
+
+.table {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-height: 60vh;
+}
+.table::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.tableWrapper {
+  width: 100%;
+  min-height: 640px;
+}
+
+.deletebtn {
+  color: var(--amount-expenses-text-color);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.updateIcon {
+  color: var(--accent-btn-color);
+
+  background-color: transparent;
+  border: none;
+  float: right;
+  cursor: pointer;
+}
+.tableCell {
+  color: var(--main-text-color);
+}
+.tableCellDark {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .table {
+    width: 100%;
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  .table {
+    width: 688px;
+  }
+} */
+
+@media screen and (min-width: 1280px) {
+  .table {
+    width: 100%;
+    margin-top: 46px;
+    margin-left: 30px;
+  }
+}
